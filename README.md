@@ -26,7 +26,7 @@ Cependant, il est tout à fait possible d'étendre une histoire avec des variabl
 Comme réalisé ici, avec ce projet. <br>
 
 Twine publie directement au format HTML. <br>
-Le fichier [index.html](#) à été créer automatiquement.
+Le fichier [index.html](https://github.com/dalbrechtmartin/TwineGame-PerduDansUneForet/blob/main/index.html) à été créer automatiquement.
 
 *Cliquez sur le lien de [demo](https://dalbrechtmartin.github.io/TwineGame-PerduDansUneForet/) pour tester le jeu.* <br>
 !! JEU ENCORE EN COURS DE CRÉATION !!
