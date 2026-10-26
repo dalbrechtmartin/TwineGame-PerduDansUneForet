@@ -12,17 +12,17 @@
 <tw-storydata name="Perdu dans une forêt" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="ADF64FB4-0EE3-4938-88B4-C7E13377EEE3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 tw-story[tags~="forêt"] {
-  background-image: url("https://digipad.app/nfs2/419553/foret-flou_ef04p2nukol.png");
+  background-image: url("assets/foret-flou.png");
   background-size: cover;
 }
 
 tw-story[tags~="inventaire"] {
-  background-image: url("https://digipad.app/nfs2/419553/inventaire_9wuxljsp6x.png");
+  background-image: url("assets/inventaire.png");
   background-size: cover;
 }
 
 tw-story[tags~="approcheMaison"] {
-  background-image: url("https://digipad.app/nfs2/419553/maison-proche-flou_5anpnqafhzu.png");
+  background-image: url("assets/maison-proche-flou.png");
   background-size: cover;
 }
 
@@ -442,7 +442,7 @@ $( document ).ready(function() {
 (save-game: &quot;file A&quot;)
 }
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;illustration&quot; src=&quot;https://digipad.app/nfs2/419553/foret_bdhdxocgyg.png&quot;&gt;
+&lt;img class=&quot;illustration&quot; src=&quot;assets/foret.png&quot;&gt;
 &lt;!--Histoire P1--&gt;
 |1&gt;[Vous êtes perdu.e dans une (link:&quot;forêt&quot;)[$transition(show:?2)forêt].]
 
@@ -463,11 +463,11 @@ Voulez-vous le prendre ?] $transitionNext+(replace:?3)[(enchant: ?vert, (hover-s
     (display: &quot;Transitions&quot;)
 	(set: $previousPassage to &quot;Prendre caillou&quot;)
 	(set: $nextPassage to &quot;Forêt de départ - Suite&quot;)
-	(set: $newItem to &quot;&lt;img class=\&quot;item\&quot; src=\&quot;https://digipad.app/nfs2/419553/rock_mgm64z43y3h.png\&quot; alt=\&quot;Caillou\&quot;&gt;&quot;)
+	(set: $newItem to &quot;&lt;img class=\&quot;item\&quot; src=\&quot;assets/caillou.png\&quot; alt=\&quot;Caillou\&quot;&gt;&quot;)
 	(set: $itemName to &quot;Caillou&quot;)
 }
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;illustration&quot; src=&quot;https://digipad.app/nfs2/419553/stone_b_j46gqdrvsk8.png&quot;&gt;
+&lt;img class=&quot;illustration&quot; src=&quot;assets/caillou-sol.png&quot;&gt;
 &lt;!--Histoire P1--&gt;
 |1&gt;[//Vous prenez le caillou pour l&#39;examiner de plus près.//
 Il semblerait qu&#39;il s&#39;agisse d&#39;un caillou tout ce qu&#39;il y a de plus banal.
@@ -486,7 +486,7 @@ Il semblerait qu&#39;il s&#39;agisse d&#39;un caillou tout ce qu&#39;il y a de p
 	(set: $nextPassage to &quot;Forêt de départ - Suite&quot;)
 }
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;illustration&quot; src=&quot;https://digipad.app/nfs2/419553/stone_b_j46gqdrvsk8.png&quot;&gt;
+&lt;img class=&quot;illustration&quot; src=&quot;assets/caillou-sol.png&quot;&gt;
 &lt;!--Histoire P1--&gt;
 |1&gt;[//Vous décidez de ne pas prendre le caillou.//
 Pourquoi faire, après tout ?
@@ -518,7 +518,7 @@ Il vaut mieux se concentrer sur une manière de $transitionArrive[[retrouver vot
      ]
 ]
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;inventaire&quot; src=&quot;https://digipad.app/nfs2/419553/06_backpack_uqvat18c1ah.png&quot;&gt;
+&lt;img class=&quot;inventaire&quot; src=&quot;assets/sac.png&quot;&gt;
 }
 &lt;!--Titre--&gt;
 |1&gt;[//Voici le contenu de votre sac.
@@ -561,7 +561,7 @@ Vous ne pouvez pas prendre $newItem !**]
 	(set: $previousPassage to &quot;Inventaire&quot;)
 }
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;imageView&quot; src=&quot;https://digipad.app/nfs2/419553/stone_b_j46gqdrvsk8.png&quot;&gt;
+&lt;img class=&quot;imageView&quot; src=&quot;assets/caillou-sol.png&quot;&gt;
 &lt;!--Histoire P1--&gt;
 |1&gt;[Il s&#39;agit d&#39;un *caillou*. Rien de particulier.
 //Pourquoi l&#39;avez-vous ramassez déjà ?//]
@@ -601,7 +601,7 @@ Vous ne pouvez pas prendre $newItem !**]
 	(set: $previousPassage to &quot;Forêt de départ - Suite&quot;)
 }
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;illustration&quot; src=&quot;https://digipad.app/nfs2/419553/foret_bdhdxocgyg.png&quot;&gt;
+&lt;img class=&quot;illustration&quot; src=&quot;assets/foret.png&quot;&gt;
 &lt;!--Histoire P1--&gt;
 |1&gt;[(text-size:0.65)+(opacity:0.5)[//Vous pouvez dès maintenant utiliser la barre latérale pour sauvegarder votre progression ainsi que voir votre inventaire.//]]
 
@@ -613,16 +613,16 @@ Comme si quelqu&#39;un les avait placés ici dans le seul but de (link:&quot;tra
 |4)[Peut-être arriverez-vous à  $transitionArrive[[trouver de l&#39;aide en les suivants-&gt;Maison en vue]] ?]
 &lt;!--Fin Histoire--&gt;</tw-passagedata><tw-passagedata pid="10" name="TO-DO" tags="" position="0,0" size="100,100">//TO-DO//
 (link-goto: &quot;Retour&quot;, $previousPassage)
-</tw-passagedata><tw-passagedata pid="11" name="hal.tracks" tags="PARAMÈTRES" position="100,0" size="100,100">forest: https://digipad.app/nfs2/419553/spring-birds-loop-with-low-cut-new-jersey-6267_3zm68l7xoa8.mp3
+</tw-passagedata><tw-passagedata pid="11" name="hal.tracks" tags="PARAMÈTRES" position="100,0" size="100,100">forest: assets/foret-ambiance.mp3
 
-leafstep: https://digipad.app/nfs2/419553/footsteps-dirt-gravel-6823_jizk06iz_v59t4d3dg3m.mp3
+leafstep: assets/pas.mp3
 
-rock: https://digipad.app/nfs2/419553/pickup-item1-64283_zpshex7y_pi8hf2o435e.mp3
+rock: assets/ramasser.mp3
 
-openbackpack: https://digipad.app/nfs2/419553/zipper-43841_nbw59oviujh.mp3
-closebackpack: https://digipad.app/nfs2/419553/unzip-mid-35906_5yn4v4r8hgw.mp3
+openbackpack: assets/sac-ouvrir.mp3
+closebackpack: assets/sac-fermer.mp3
 
-sight: https://digipad.app/temp/female-sigh-149495-ozlk1loy-2p0qw59svp3_jreduzcs_22eayqm254e.mp3
+sight: assets/soupir.mp3
 </tw-passagedata><tw-passagedata pid="12" name="Ambiance Forêt" tags="forêt PARAMÈTRES" position="650,250" size="100,100">{
 (unless: (track: &#39;forest&#39;, &#39;isplaying&#39;))[
 	(track: &#39;forest&#39;, &#39;loop&#39;, true)
@@ -640,7 +640,7 @@ A.controls.show();
 (display: &quot;Paramètres&quot;)
 (set: $previousPassage to &quot;Maison en vue&quot;)
 &lt;!--Illustration--&gt;
-&lt;img class=&quot;illustration&quot; src=&quot;https://digipad.app/nfs2/419553/maison-proche_30r1nesm2tt.png&quot;&gt;
+&lt;img class=&quot;illustration&quot; src=&quot;assets/maison-proche.png&quot;&gt;
 }
 &lt;!--Histoire P1--&gt;
 |1&gt;[]
